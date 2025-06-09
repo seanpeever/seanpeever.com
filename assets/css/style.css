@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --primary-color: #2563eb;
+  --secondary-color: #f3f4f6;
+  --header-bg: rgba(255,255,255,0.8);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #111827;
+    --text-color: #f9fafb;
+    --primary-color: #3b82f6;
+    --secondary-color: #1f2937;
+    --header-bg: rgba(17,24,39,0.8);
+  }
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 2px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: var(--header-bg);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.features {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  background: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.timeline {
+  margin: 2rem 0;
+}
+
+.timeline ul {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.timeline li {
+  background: var(--secondary-color);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
