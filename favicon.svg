@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SP">
+  <rect width="512" height="512" rx="96" fill="#101820"/>
+  <text
+    x="50%"
+    y="54%"
+    fill="#ffffff"
+    dominant-baseline="middle"
+    font-family="Inter, Arial, Helvetica, sans-serif"
+    font-size="184"
+    font-weight="800"
+    letter-spacing="-6"
+    text-anchor="middle">SP</text>
+</svg>
